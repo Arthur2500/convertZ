@@ -90,6 +90,7 @@
 
         async function updateEstimate() {
             document.getElementById('convertButton').disabled = true;
+            convertButton.innerText = 'Estimating File Size...';
             const fileInput = document.getElementById('files');
             const files = fileInput.files;
             if (files.length > 0) {
@@ -120,6 +121,7 @@
                         <p>Estimated Size: ${(result.estimated_size / (1024 * 1024)).toFixed(2)} MB</p>
                     `;
                     document.getElementById('convertButton').disabled = false;
+                    convertButton.innerText = 'Download';
                 } else {
                     document.getElementById('estimate').innerHTML = `<p>Error calculating size</p>`;
                     document.getElementById('convertButton').disabled = true;
