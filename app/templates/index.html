@@ -89,6 +89,7 @@
         }
 
         async function updateEstimate() {
+            document.getElementById('convertButton').disabled = true;
             const fileInput = document.getElementById('files');
             const files = fileInput.files;
             if (files.length > 0) {
