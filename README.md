@@ -11,7 +11,7 @@ docker run --name convertz -d -p 5000:5000 ghcr.io/arthur2500/convertz:latest
 or
 ```
 mkdir Convertz &&
-wget https://raw.githubusercontent.com/Arthur2500/ConvertZ/main/docker-compose.yml
+wget https://raw.githubusercontent.com/Arthur2500/ConvertZ/main/docker-compose.yml &&
 docker-compose up -d
 ```
 
